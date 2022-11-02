@@ -1,121 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
-    <title>Egor Sharov</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chunchel resume</title>
+    <meta
+      name="discription"
+      content="учусь в HTML и разработку, сайт резюме Chunchel"
+    />
+    <meta name="keywords" content="html, css, javavscript, cv, resume" />
   </head>
   <body>
     <div class="container">
       <div class="info">
-        <img
-          src="https://cdn-st2.rtr-vesti.ru/vh/pictures/bq/370/806/5.jpg"
-          alt="My photo"
-          class="avatar"
-        />
-        <div class="ava-text">
-          <h1>Егор Шаров</h1>
+        <img src="IMG_20221026_114645.jpg" alt="My photo" class="ava" />
+        <div class="text-info">
+          <h1>Chunchel Egor</h1>
           <p>
-            <em> На пути к совершенству. </em>
+            <em><strong>Лучше поздно,чем никогда.</strong></em> 34 года.
+            Начинающий веб-разработчик по
+            <strong> HTML, CSS, JavaScript </strong> . В планах полноценное
+            обучение, с дальнейшим развитием в отрасли IT.
           </p>
-
-          <p>Учусь разработке и програмированию!</p>
-          <h4>Мои социальные сети</h4>
-
-          <a href="https://instagram.com/stupidlucky" target="_blank"
-            >Instagram</a
+          <h2>Социальная сеть</h2>
+          <a href="https://vk.com/cerpent" target="_blank">vk.com</a>
+          |
+          <a href="https://www.instagram.com/stupidlucky" target="_blank"
+            >instagram</a
           >
-
-          <a href="https://vk.com/cerpent" target="_blank">Vk</a>
         </div>
       </div>
-      <div class="card bg-yellow">
-        <h4>Мои хобби</h4>
-        <ol class="list">
-          <li>Спорт</li>
+
+      <div id="block2" class="block2 bg-green">
+        <h2>Мои хобби</h2>
+        <ul type="square">
+          <li>Веб-разработка</li>
+          <li>Компьютер</li>
+          <li>Путешествия</li>
+          <li>Кулинария</li>
           <li>Сноуборд</li>
-          <li>Котики</li>
-        </ol>
-      </div>
-      <div class="card bg-green">
-        <h2>Опыт работы</h2>
-        <table class="table">
-          <tr>
-            <th>Company</th>
-            <th>Должность</th>
-            <th>Год</th>
-          </tr>
-          <tr>
-            <td>Нигде</td>
-            <td>Software engineer</td>
-            <td>2022-2022</td>
-          </tr>
-          <tr>
-            <td>Нигде2</td>
-            <td>Software engineer</td>
-            <td>2022-2022</td>
-          </tr>
-          <tr></tr>
-        </table>
-      </div>
-      <div class="card bg-red">
-        <h2>Youtube</h2>
-        <ul class="link-list">
-          <li>
-            <a
-              href="https://www.youtube.com/watch?v=hiYVMjhbf5g&t=1s"
-              target="_blank"
-            >
-              Котики</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/watch?v=gJ6dFlS-RMM"
-              target="_blank"
-            >
-              Сноуборд</a
-            >
-          </li>
         </ul>
       </div>
-      <div class="contact">
-        <h3>Связаться со мной</h3>
-        <form action="/">
-          <div class="row">
-            <div class="from-group">
-              <label for="name">Ваше имя:</label>
-              <input type="text" id="name" placeholder="Введите ваше имя..." />
+      <div id="block3" class="block3 bg-red">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Спецэнергоремонт</td>
+              <td>Наладчик КИПиА</td>
+              <td>2007-2015</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>ИП</td>
+              <td>Управление</td>
+              <td>2015-2020</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ozon</td>
+              <td>Courier</td>
+              <td>2020-</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="block4" class="block4">
+        <form action="/" class="form">
+          <h2>Связаться со мной</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ваше Имя:</label>
+              <input type="text" id="name" placeholder="Введите Ваше имя..." />
             </div>
-            <div class="from-group">
+            <div class="form-group">
               <label for="email">Ваш email:</label>
               <input
-                type="email"
+                type="text"
                 id="email"
-                placeholder="Введите ваш email..."
+                placeholder="Введите Ваш email..."
               />
             </div>
           </div>
-          <div class="from-group">
-            <label for="text">Ваше сообщение:</label>
 
-            <textarea name="" id="text" cols="15" rows="2"></textarea>
+          <div class="form-group">
+            <label for="from-group">Ваше сообщение:</label>
+            <textarea
+              name=""
+              id="text"
+              cols="25"
+              rows="5"
+              placeholder="Введите сообщение..."
+            ></textarea>
           </div>
-          <input class="btn" type="submit" value="Связаться!" />
+          <div>
+            <input class="btn" type="button" value="Связаться!" />
+          </div>
         </form>
       </div>
-      <div class="box-model">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-
-      <div class="position">
-        <div class="box"></div>
-      </div>
-
-      <div style="margin-bottom: 500px"></div>
     </div>
   </body>
 </html>
